@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 export const connectDB = async () => {
   try {
-    const connection = await mongoose.connect(process.env.DATABASE_URL);
+    const connection = await mongoose.connect(process.env.DATABASE_URL!);
     const url = `MongoDB conectado en el puerto ${connection.connection.port}`;
     console.log(colors.cyan.bold(url));
   } catch (error) {
