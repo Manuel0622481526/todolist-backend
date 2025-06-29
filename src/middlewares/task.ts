@@ -21,6 +21,7 @@ export const taskExists = async (
     if (!task) {
       const error = new Error("Id no valido");
       res.status(404).json({ error: error });
+      return;
     }
     req.task = task;
 
