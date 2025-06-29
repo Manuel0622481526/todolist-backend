@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const whitelist = [process.env.FRONTEND_URL ?? "http://localhost:5173"];
+const whitelist = [process.env.FRONTEND_URL ?? "https://tasksmanuel.netlify.app/];
 
 export const corsConfig: CorsOptions = {
   origin: whitelist,
